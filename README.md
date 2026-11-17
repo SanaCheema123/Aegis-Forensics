@@ -1,5 +1,9 @@
 # Aegis Forensics
 
+
+https://github.com/user-attachments/assets/11bc9706-904e-4c1e-87ed-39a8e17ea0ee
+
+
 AI-powered digital forensics and cybercrime investigation console. The React/TypeScript website calls a local FastAPI adapter over the original Python forensic engine. The original Streamlit application remains available and unchanged.
 
 This is a **single-operator local application**, not an authenticated multi-user service. Run both servers on loopback. Do not expose them publicly or use multiple API workers. Evidence, checkpoints and historical audit records are preserved.
