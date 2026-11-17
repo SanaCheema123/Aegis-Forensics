@@ -1,0 +1,5 @@
+FORENSIC-PLATFORM-YARA-TEST
+rem --- demo file for the YARA scanner (harmless text only) ---
+powershell.exe -NoP -W Hidden -Enc VwByAGkAdABlAC0ASABvAHMAdAAgAGQAZQBtAG8A
+copy payload.bin C:\Windows\Temp\upd.exe
+wevtutil cl Security

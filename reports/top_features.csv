@@ -1,0 +1,16 @@
+,0
+sttl,0.40191054
+ct_state_ttl,0.12357579
+dttl,0.09134256
+is_sm_ips_ports,0.06134534
+proto_tcp,0.042075094
+ct_dst_sport_ltm,0.04058349
+state_INT,0.025185572
+swin,0.023700867
+sloss,0.01562951
+state_REQ,0.013569466
+service_dns,0.012566037
+proto_udp,0.011353399
+ct_dst_src_ltm,0.007709032
+proto_unas,0.007638283
+service_http,0.0073961015

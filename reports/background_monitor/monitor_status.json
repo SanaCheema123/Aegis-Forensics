@@ -1,0 +1,23 @@
+{
+  "state": "running",
+  "running": true,
+  "pid": 12340,
+  "monitor_id": "42779e60f7cd4840bbc35e20cf14628d",
+  "started_at_utc": "2026-11-10T07:45:13.587303+00:00",
+  "heartbeat_utc": "2026-11-10T08:40:46.887329+00:00",
+  "directories": [
+    "C:\\Users\\umair\\Downloads"
+  ],
+  "files_checked": 3,
+  "health": {
+    "file_observer_status": "running",
+    "file_worker_status": "running",
+    "event_monitoring_status": "running",
+    "last_successful_event_read_utc": "2026-11-10T08:40:33.136268+00:00",
+    "event_log_errors": [],
+    "files_checked": 3,
+    "queue_dropped": 0,
+    "persistence_error": null,
+    "yara_available": true
+  }
+}

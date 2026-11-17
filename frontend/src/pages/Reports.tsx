@@ -1,0 +1,18 @@
+import { useState } from 'react'
+import { useMutation, useQuery, useQueryClient } from '@tanstack/react-query'
+import { FileText, Download } from 'lucide-react'
+import { useScans, ScanSelect } from './Investigations'
+import { EvidenceSelect } from '../components/investigations/EvidenceSelect'
+import { api, post, download } from '../services/api'
+import { Card, PageHeading, Notice, ErrorState, Loading, Empty, Badge } from '../components/common'
+import { Button } from '../components/ui/button'
+import { date } from '../lib/utils'
+export function ReportsPanel(){
+ const data=useScans();const client=useQueryClient();const [selected,setSelected]=useState<Record<string,string>>({});const [error,setError]=useState<Error|null>(null);const reportId=selected[data.caseId]||'';const noFindings=data.scans.data?.items.find(r=>r.scan_id===data.scanId)?.finding_count===0
+ const history=useQuery({queryKey:['reports',data.caseId],queryFn:()=>api(data.base+'/reports'),enabled:!!data.caseId})
+ const preview=useQuery({queryKey:['report',data.caseId,reportId],queryFn:()=>api(data.base+'/reports/'+reportId),enabled:!!reportId})
+ const generate=useMutation({mutationFn:()=>post(data.base+'/reports',{evidence_id:data.evidenceId,scan_id:data.scanId}),onSuccess:r=>{setSelected(v=>({...v,[data.caseId]:r.id}));client.invalidateQueries({queryKey:['reports',data.caseId]});client.invalidateQueries({queryKey:['dashboard']})}})
+ const exportReport=async(format:'pdf'|'md')=>{setError(null);try{await download(data.base+'/reports/'+reportId+'/download?format='+format,'aegis-'+data.caseId+'.'+format)}catch(e){setError(e as Error)}}
+ return <><EvidenceSelect/><ScanSelect data={data}/><Card><div className="section-heading"><div><h2>Forensic report builder</h2><p>Generate from the verified saved scan, with grounded references and explicit limitations.</p></div><FileText size={23}/></div><Notice>Deterministic report generation uses the existing forensic reporting engine. Optional LLM generation is not exposed by this interface; report generation remains available without it.</Notice><Button disabled={!data.scanId||noFindings||generate.isPending} onClick={()=>generate.mutate()}>{generate.isPending?'Validating and generating…':'Generate forensic report'}</Button>{noFindings&&<Notice>This saved scan has no evidence-linked findings. The existing engine does not create an evidence-referenced report for an empty finding set.</Notice>}{generate.error&&<ErrorState error={generate.error}/ >}<label>Generated web report archive<select value={reportId} onChange={e=>setSelected(v=>({...v,[data.caseId]:e.target.value}))}><option value="">Choose a generated report</option>{history.data?.items.map((r:any)=><option key={r.id} value={r.id}>{r.filename} · {date(r.generated_at_utc)}</option>)}</select></label>{history.error&&<ErrorState error={history.error}/ >}{preview.isLoading?<Loading/>:preview.error?<ErrorState error={preview.error}/>:preview.data?<><div className="section-heading"><Badge>{preview.data.mode}</Badge><div className="row-actions"><Button variant="outline" onClick={()=>exportReport('md')}><Download size={16}/>Markdown</Button><Button onClick={()=>exportReport('pdf')}><Download size={16}/>PDF</Button></div></div><pre className="report-preview">{preview.data.text}</pre><p className="subtle-note">Every export rechecks current evidence bytes, the audit chain, scan snapshot, and report binding.</p></>:<Empty title="No report selected"/>}{error&&<ErrorState error={error}/>}</Card></>
+}
+export default function Reports(){return <><PageHeading title="Forensic reports" description="Verified evidence, traceable findings, and exports that recheck their sources."/><ReportsPanel/></>}

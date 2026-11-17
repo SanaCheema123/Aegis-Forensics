@@ -1,0 +1,16 @@
+,0
+sttl,0.7365765
+ct_state_ttl,0.024429893
+state_CON,0.023730706
+dttl,0.01994697
+proto_unas,0.016236218
+proto_tcp,0.013833649
+service_dns,0.012005809
+swin,0.0093561495
+ct_dst_sport_ltm,0.009147405
+proto_sun-nd,0.008140989
+state_ECO,0.007678268
+ct_srv_dst,0.007343476
+proto_ospf,0.007227056
+proto_arp,0.0067622117
+proto_swipe,0.0060787145

@@ -1,0 +1,3 @@
+--- demo text only ---
+Your files have been encrypted.
+To decrypt them you must pay 0.5 Bitcoin to the address below.

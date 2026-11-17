@@ -1,0 +1,11 @@
+timestamp,event_id,username,source_ip,event_type,status,details
+2026-10-20 09:00:00,1,ali,192.168.1.10,login_success,success,User logged in from usual workstation
+2026-10-20 09:05:00,2,sara,192.168.1.12,file_access,success,Accessed routine project document
+2026-10-20 09:10:00,3,ali,192.168.1.10,login_success,success,User logged in from usual workstation
+2026-10-20 09:14:00,4,unknown,203.0.113.45,login_failed,failed,Invalid password attempt
+2026-10-20 09:14:10,5,unknown,203.0.113.45,login_failed,failed,Invalid password attempt
+2026-10-20 09:14:20,6,unknown,203.0.113.45,login_failed,failed,Repeated invalid password attempt
+2026-10-20 09:14:30,7,admin,203.0.113.45,login_failed,failed,Repeated login failures against admin account
+2026-10-20 09:15:00,8,admin,203.0.113.45,privileged_access_attempt,blocked,Unusual privileged access attempt blocked
+2026-10-20 09:17:00,9,ali,192.168.1.10,file_access,success,Accessed routine project document
+2026-10-20 09:20:00,10,system,127.0.0.1,service_restart,success,System service restarted for maintenance

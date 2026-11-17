@@ -1,0 +1,3 @@
+import { useEvidence } from '../../hooks/useEvidence'
+import { ErrorState, Notice } from '../common'
+export function EvidenceSelect() { const data=useEvidence(); return <div className="evidence-selector"><label>Source evidence<select aria-label="Source evidence" value={data.evidenceId} onChange={e=>data.setEvidenceId(e.target.value)}><option value="" disabled>Select evidence</option>{data.items.map(item=><option key={item.id} value={item.id}>{item.filename}</option>)}</select></label>{data.evidence&&<code className="hash">SHA-256 {data.evidence.sha256}</code>}{data.query.error&&<ErrorState error={data.query.error}/ >}{data.selectionError&&<ErrorState error={data.selectionError}/ >}{!data.caseId&&<Notice>Create a case to begin an investigation.</Notice>}</div> }

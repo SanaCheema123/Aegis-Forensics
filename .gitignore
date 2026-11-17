@@ -1,0 +1,9 @@
+.venv/
+.tools/
+**/node_modules/
+**/__pycache__/
+frontend/dist/
+frontend/test-results/
+frontend/playwright-report/
+frontend/*.tsbuildinfo
+frontend/.env.local

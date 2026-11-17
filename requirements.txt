@@ -1,0 +1,15 @@
+streamlit>=1.66
+pandas
+numpy
+scikit-learn
+joblib
+xgboost
+plotly
+matplotlib
+sentence-transformers
+requests
+pydantic
+yara-python>=4.3
+watchdog>=4.0
+reportlab>=4.2
+pypdf>=5.0

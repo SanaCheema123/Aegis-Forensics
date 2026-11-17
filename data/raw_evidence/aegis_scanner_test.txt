@@ -1,0 +1,17 @@
+AEGIS FORENSICS - SAFE TEST EVIDENCE
+This is a synthetic text file for testing a digital forensic scanner.
+No executable code, malware, credentials, or real user data is present.
+
+2026-11-16T10:00:00Z INFO User demo logged in successfully
+2026-11-16T10:01:00Z WARNING Synthetic alert: failed login for test_user from 192.0.2.10
+2026-11-16T10:01:05Z WARNING Synthetic alert: failed login for test_user from 192.0.2.10
+2026-11-16T10:01:10Z WARNING Synthetic alert: failed login for test_user from 192.0.2.10
+2026-11-16T10:02:00Z INFO Synthetic alert: successful login for test_user from 192.0.2.10
+
+TEST INDICATORS (INERT STRINGS ONLY):
+mimikatz
+powershell -enc
+credential dumping
+suspicious_script.ps1
+
+These are plain text indicators only; nothing in this file executes.

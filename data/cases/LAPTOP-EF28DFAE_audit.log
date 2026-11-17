@@ -1,0 +1,1 @@
+{"timestamp": "2026-11-12T07:01:05.427695+00:00", "case_id": "LAPTOP-EF28DFAE", "action": "LAPTOP_SCAN_COMPLETED", "details": "checked=3000; skipped=3676; errors=0; complete=False; root=C:\\Users\\umair\\Documents", "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000", "entry_hash": "2a66d5fb332be2be13835d35320d84f41fc8ddcbb9bf2d787f0ac62fe9503284"}

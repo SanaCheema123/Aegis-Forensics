@@ -1,0 +1,62 @@
+timestamp,host,user,source_ip,event_id,event_type,status,message
+2026-10-14 08:07:01,WS-03,alice,10.0.0.11,4624,LOGON_SUCCESS,success,User alice logged on
+2026-10-14 08:21:17,WS-02,carol,10.0.0.31,4624,LOGON_SUCCESS,success,User carol logged on
+2026-10-14 08:38:01,WS-03,bob,10.0.0.23,4624,LOGON_SUCCESS,success,User bob logged on
+2026-10-14 08:38:16,WS-02,dave,10.0.0.42,4624,LOGON_SUCCESS,success,User dave logged on
+2026-10-14 09:01:05,WS-03,alice,10.0.0.11,4663,FILE_ACCESS,success,alice accessed a document
+2026-10-14 09:12:10,WS-02,bob,10.0.0.23,4625,LOGON_FAILURE,failure,Wrong password (typo)
+2026-10-14 09:12:41,WS-02,bob,10.0.0.23,4625,LOGON_FAILURE,failure,Wrong password (typo)
+2026-10-14 09:48:51,WS-03,bob,10.0.0.23,4663,FILE_ACCESS,success,bob accessed a document
+2026-10-14 10:05:24,WS-02,carol,10.0.0.31,4663,FILE_ACCESS,success,carol accessed a document
+2026-10-14 10:37:27,WS-03,alice,10.0.0.11,4663,FILE_ACCESS,success,alice accessed a document
+2026-10-14 11:47:06,WS-03,alice,10.0.0.11,4663,FILE_ACCESS,success,alice accessed a document
+2026-10-14 12:45:41,WS-03,bob,10.0.0.23,4663,FILE_ACCESS,success,bob accessed a document
+2026-10-14 12:48:21,WS-02,carol,10.0.0.31,4663,FILE_ACCESS,success,carol accessed a document
+2026-10-14 13:15:14,WS-03,alice,10.0.0.11,4663,FILE_ACCESS,success,alice accessed a document
+2026-10-14 13:51:55,WS-03,bob,10.0.0.23,4663,FILE_ACCESS,success,bob accessed a document
+2026-10-14 15:05:35,WS-02,dave,10.0.0.42,4663,FILE_ACCESS,success,dave accessed a document
+2026-10-14 15:14:28,WS-03,bob,10.0.0.23,4663,FILE_ACCESS,success,bob accessed a document
+2026-10-14 16:34:07,WS-02,dave,10.0.0.42,4663,FILE_ACCESS,success,dave accessed a document
+2026-10-14 17:06:22,WS-02,carol,10.0.0.31,4634,LOGOFF,success,User carol logged off
+2026-10-14 17:10:44,WS-03,bob,10.0.0.23,4634,LOGOFF,success,User bob logged off
+2026-10-14 17:13:14,WS-03,alice,10.0.0.11,4634,LOGOFF,success,User alice logged off
+2026-10-14 17:18:53,WS-02,dave,10.0.0.42,4634,LOGOFF,success,User dave logged off
+2026-10-15 02:10:05,SRV-01,administrator,203.0.113.45,4625,LOGON_FAILURE,failure,Failed logon attempt
+2026-10-15 02:10:30,SRV-01,administrator,203.0.113.45,4625,LOGON_FAILURE,failure,Failed logon attempt
+2026-10-15 02:10:55,SRV-01,administrator,203.0.113.45,4625,LOGON_FAILURE,failure,Failed logon attempt
+2026-10-15 02:11:20,SRV-01,administrator,203.0.113.45,4625,LOGON_FAILURE,failure,Failed logon attempt
+2026-10-15 02:11:45,SRV-01,administrator,203.0.113.45,4625,LOGON_FAILURE,failure,Failed logon attempt
+2026-10-15 02:12:10,SRV-01,administrator,203.0.113.45,4625,LOGON_FAILURE,failure,Failed logon attempt
+2026-10-15 02:12:35,SRV-01,administrator,203.0.113.45,4625,LOGON_FAILURE,failure,Failed logon attempt
+2026-10-15 02:13:00,SRV-01,administrator,203.0.113.45,4625,LOGON_FAILURE,failure,Failed logon attempt
+2026-10-15 02:13:25,SRV-01,administrator,203.0.113.45,4625,LOGON_FAILURE,failure,Failed logon attempt
+2026-10-15 02:13:50,SRV-01,administrator,203.0.113.45,4625,LOGON_FAILURE,failure,Failed logon attempt
+2026-10-15 02:14:15,SRV-01,administrator,203.0.113.45,4625,LOGON_FAILURE,failure,Failed logon attempt
+2026-10-15 02:14:40,SRV-01,administrator,203.0.113.45,4625,LOGON_FAILURE,failure,Failed logon attempt
+2026-10-15 02:15:40,SRV-01,administrator,203.0.113.45,4624,LOGON_SUCCESS,success,User administrator logged on
+2026-10-15 02:18:12,SRV-01,administrator,203.0.113.45,7045,SERVICE_INSTALLED,success,Service 'WinUpdateSvc' installed (path C:\Windows\Temp\upd.exe)
+2026-10-15 02:21:30,SRV-01,administrator,203.0.113.45,4720,USER_CREATED,success,User account 'support_adm' created
+2026-10-15 02:22:05,SRV-01,administrator,203.0.113.45,4732,GROUP_MEMBER_ADDED,success,User 'support_adm' added to group Administrators
+2026-10-15 02:41:10,SRV-01,administrator,203.0.113.45,1102,LOG_CLEARED,success,The audit log was cleared
+2026-10-15 03:05:20,WS-03,carol,10.0.0.31,4624,LOGON_SUCCESS,success,User carol logged on (night shift)
+2026-10-15 08:10:34,WS-03,carol,10.0.0.31,4624,LOGON_SUCCESS,success,User carol logged on
+2026-10-15 08:24:17,WS-01,bob,10.0.0.23,4624,LOGON_SUCCESS,success,User bob logged on
+2026-10-15 08:25:17,WS-02,dave,10.0.0.42,4624,LOGON_SUCCESS,success,User dave logged on
+2026-10-15 08:39:56,WS-03,alice,10.0.0.11,4624,LOGON_SUCCESS,success,User alice logged on
+2026-10-15 09:14:52,WS-03,carol,10.0.0.31,4663,FILE_ACCESS,success,carol accessed a document
+2026-10-15 09:42:14,WS-03,alice,10.0.0.11,4663,FILE_ACCESS,success,alice accessed a document
+2026-10-15 12:10:29,WS-03,carol,10.0.0.31,4663,FILE_ACCESS,success,carol accessed a document
+2026-10-15 12:43:20,WS-03,carol,10.0.0.31,4663,FILE_ACCESS,success,carol accessed a document
+2026-10-15 12:45:04,WS-03,alice,10.0.0.11,4663,FILE_ACCESS,success,alice accessed a document
+2026-10-15 12:58:36,WS-02,dave,10.0.0.42,4663,FILE_ACCESS,success,dave accessed a document
+2026-10-15 13:05:03,WS-01,dave,10.0.0.42,4625,LOGON_FAILURE,failure,Wrong password (typo)
+2026-10-15 13:05:54,WS-03,alice,10.0.0.11,4663,FILE_ACCESS,success,alice accessed a document
+2026-10-15 13:44:59,WS-01,bob,10.0.0.23,4663,FILE_ACCESS,success,bob accessed a document
+2026-10-15 14:10:23,WS-01,bob,10.0.0.23,4663,FILE_ACCESS,success,bob accessed a document
+2026-10-15 14:13:41,WS-02,dave,10.0.0.42,4663,FILE_ACCESS,success,dave accessed a document
+2026-10-15 14:13:42,WS-01,bob,10.0.0.23,4663,FILE_ACCESS,success,bob accessed a document
+2026-10-15 15:17:59,WS-03,carol,10.0.0.31,4663,FILE_ACCESS,success,carol accessed a document
+2026-10-15 17:02:51,WS-03,carol,10.0.0.31,4634,LOGOFF,success,User carol logged off
+2026-10-15 17:04:38,WS-01,bob,10.0.0.23,4634,LOGOFF,success,User bob logged off
+2026-10-15 17:14:55,WS-03,alice,10.0.0.11,4634,LOGOFF,success,User alice logged off
+2026-10-15 17:31:25,WS-02,dave,10.0.0.42,4634,LOGOFF,success,User dave logged off
